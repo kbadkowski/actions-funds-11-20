@@ -12,10 +12,10 @@ on:
     outputs:
       current-time:
         description: 'The time when greeting.'
-        value: ${{ jobs.reusable-job.outputs.time }}
+        value: ${{ jobs.reusable-job.time.outputs.time }}
       person:
         description: 'The person.'
-        value: ${{ jobs.reusable-job.outputs.person }}
+        value: ${{ jobs.reusable-job.person.outputs.person }}
 
 jobs:
   reusable-job:
