@@ -14,7 +14,7 @@ on:
         description: 'The time when greeting.'
         value: ${{ jobs.reusable-job.outputs.time }}
       person:
-        description: 'The time when greeting.'
+        description: 'The person.'
         value: ${{ jobs.reusable-job.outputs.person }}
 
 jobs:
