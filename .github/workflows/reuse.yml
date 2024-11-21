@@ -16,4 +16,4 @@ jobs:
         run: echo "Time was ${{ needs.call-workflow.outputs.current-time }}"
 
       - name: second_step
-        run: echo "The person is ${{ needs.call-workflow.outputs.person }}"
+        run: echo "The person is ${{ needs.call-workflow.outputs.current-person }}"
